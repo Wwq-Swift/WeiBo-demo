@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBNewFeatureView" customModule="微博demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRN-6q-QNb">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bea-7a-BC5">
+                    <rect key="frame" x="114" y="614" width="186" height="42"/>
+                    <state key="normal" image="new_feature_button_extend"/>
+                    <connections>
+                        <action selector="enterBtnTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="oJf-8C-Ubb"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Yxe-Cw-jBl">
+                    <rect key="frame" x="180" y="676" width="55" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Yxe-Cw-jBl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="588-cZ-GdC"/>
+                <constraint firstAttribute="bottom" secondItem="CRN-6q-QNb" secondAttribute="bottom" id="Bgl-tT-eTz"/>
+                <constraint firstItem="CRN-6q-QNb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="C5K-R8-1C4"/>
+                <constraint firstItem="bea-7a-BC5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IqA-qu-Efg"/>
+                <constraint firstItem="Yxe-Cw-jBl" firstAttribute="top" secondItem="bea-7a-BC5" secondAttribute="bottom" constant="20" id="NZM-v7-Jxb"/>
+                <constraint firstAttribute="bottom" secondItem="bea-7a-BC5" secondAttribute="bottom" constant="80" id="ccy-DJ-1qG"/>
+                <constraint firstAttribute="trailing" secondItem="CRN-6q-QNb" secondAttribute="trailing" id="hlq-O9-hDL"/>
+                <constraint firstItem="CRN-6q-QNb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iPB-3J-d0H"/>
+            </constraints>
+            <connections>
+                <outlet property="enterBtn" destination="bea-7a-BC5" id="Qbv-Fa-e7c"/>
+                <outlet property="pageControl" destination="Yxe-Cw-jBl" id="sDc-df-MzV"/>
+                <outlet property="scrollView" destination="CRN-6q-QNb" id="jLv-7L-s3Y"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="new_feature_button_extend" width="186" height="42"/>
+    </resources>
+</document>

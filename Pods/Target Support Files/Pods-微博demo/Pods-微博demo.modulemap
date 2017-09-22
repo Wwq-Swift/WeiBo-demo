@@ -1,0 +1,6 @@
+framework module Pods___demo {
+  umbrella header "Pods-微博demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
