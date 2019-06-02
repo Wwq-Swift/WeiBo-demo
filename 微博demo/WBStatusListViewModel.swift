@@ -121,7 +121,7 @@ extension Statuses {
              2. 选项，换行文本，统一使用 .usesLineFragmentOrigin
              3. attributes： 指定字体字典
              */
-            height += (text as NSString).boundingRect(with: textLabelSize, options: [.usesLineFragmentOrigin], attributes: [NSFontAttributeName: originalFont], context: nil).height
+            height += (text as NSString).boundingRect(with: textLabelSize, options: [.usesLineFragmentOrigin], attributes: [NSAttributedString.Key.font: originalFont], context: nil).height
             
         }
         
@@ -131,7 +131,7 @@ extension Statuses {
             
             //转发文本的高度  - 一定用retweetedText ，拼接了 @ 用户名： 微博文字
             if let text = retweeted_status?.retweetedText {
-                height += (text as NSString).boundingRect(with: textLabelSize, options: [.usesLineFragmentOrigin], attributes: [NSFontAttributeName: retweetedFont], context: nil).height
+                height += (text as NSString).boundingRect(with: textLabelSize, options: [.usesLineFragmentOrigin], attributes: [NSAttributedString.Key.font: retweetedFont], context: nil).height
             }
         }
         

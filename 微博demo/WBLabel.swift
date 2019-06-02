@@ -69,11 +69,11 @@ public class WBLabel: UILabel {
         var range = NSRange(location: 0, length: 0)
         var attributes = attrStringM.attributes(at: 0, effectiveRange: &range)
         
-        attributes[NSFontAttributeName] = font!
-        attributes[NSForegroundColorAttributeName] = textColor
+        attributes[NSAttributedString.Key.font] = font!
+        attributes[NSAttributedString.Key.foregroundColor] = textColor
         attrStringM.addAttributes(attributes, range: range)
         
-        attributes[NSForegroundColorAttributeName] = linkTextColor
+        attributes[NSAttributedString.Key.foregroundColor] = linkTextColor
         
         for r in linkRanges {
             attrStringM.setAttributes(attributes, range: r)
@@ -92,7 +92,7 @@ public class WBLabel: UILabel {
             let results = regex.matches(in: attrString.string, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: regexRange)
             
             for r in results {
-                linkRanges.append(r.rangeAt(0))
+                linkRanges.append(r.range(at: 0))
             }
         }
     }
@@ -107,7 +107,7 @@ public class WBLabel: UILabel {
         
         var range = NSRange(location: 0, length: 0)
         var attributes = attrStringM.attributes(at: 0, effectiveRange: &range)
-        var paragraphStyle = attributes[NSParagraphStyleAttributeName] as? NSMutableParagraphStyle
+        var paragraphStyle = attributes[NSAttributedString.Key.paragraphStyle] as? NSMutableParagraphStyle
         
         if paragraphStyle != nil {
             paragraphStyle!.lineBreakMode = NSLineBreakMode.byWordWrapping
@@ -115,7 +115,7 @@ public class WBLabel: UILabel {
             // iOS 8.0 can not get the paragraphStyle directly
             paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle!.lineBreakMode = NSLineBreakMode.byWordWrapping
-            attributes[NSParagraphStyleAttributeName] = paragraphStyle
+            attributes[NSAttributedString.Key.paragraphStyle] = paragraphStyle
             
             attrStringM.setAttributes(attributes, range: range)
         }
@@ -186,13 +186,13 @@ public class WBLabel: UILabel {
         }
         
         var attributes = textStorage.attributes(at: 0, effectiveRange: nil)
-        attributes[NSForegroundColorAttributeName] = linkTextColor
+        attributes[NSAttributedString.Key.foregroundColor] = linkTextColor
         let range = selectedRange!
         
         if isSet {
-            attributes[NSBackgroundColorAttributeName] = selectedBackgroudColor
+            attributes[NSAttributedString.Key.backgroundColor] = selectedBackgroudColor
         } else {
-            attributes[NSBackgroundColorAttributeName] = UIColor.clear
+            attributes[NSAttributedString.Key.backgroundColor] = UIColor.clear
             selectedRange = nil
         }
         

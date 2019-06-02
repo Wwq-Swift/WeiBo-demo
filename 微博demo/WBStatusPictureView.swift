@@ -175,7 +175,7 @@ class WBStatusPictureView: UIView {
     }
     
     // MARK: - 点击手势触发的方法
-    func tapAction(tap: UITapGestureRecognizer) {
+    @objc func tapAction(tap: UITapGestureRecognizer) {
         
     }
 

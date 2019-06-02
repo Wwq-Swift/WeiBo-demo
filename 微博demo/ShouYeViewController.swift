@@ -99,7 +99,7 @@ extension ShouYeViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-    func updateData() {
+    @objc func updateData() {
         if self.isPullup {
             
             //max_id 取出数组中第一条微博的 id
@@ -163,7 +163,7 @@ extension ShouYeViewController: ShouYeViewCellDelegate {
 // MARK: - UI相关具体方法
 extension ShouYeViewController {
     //添加tableview 并且设置
-    func setLoginUI() {
+    @objc func setLoginUI() {
         //清除所有子view
         self.navigationItem.rightBarButtonItem = nil
         for childrenView in view.subviews {
@@ -223,7 +223,7 @@ extension ShouYeViewController {
         
     }
     
-    func pushFriends() {
+    @objc func pushFriends() {
         performSegue(withIdentifier: "friends", sender: self)
     }
     

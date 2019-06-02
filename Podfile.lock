@@ -17,7 +17,7 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
-  - ObjectMapper (2.2.6)
+  - ObjectMapper (3.3.0)
   - pop (1.0.9)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
@@ -32,14 +32,23 @@ DEPENDENCIES:
   - SDWebImage
   - SVProgressHUD
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - FMDB
+    - ObjectMapper
+    - pop
+    - SDWebImage
+    - SVProgressHUD
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
 PODFILE CHECKSUM: 38ba7c970d74d5ae2fb8852bce7597acd35a5cbd
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.3

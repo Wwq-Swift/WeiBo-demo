@@ -42,7 +42,7 @@ class WBSQLiteManager {
         createTable()
         
         //注册通知 - 监听应用程序进入后台
-        NotificationCenter.default.addObserver(self, selector: #selector(clearDBCache), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(clearDBCache), name: NSNotification.Name.NSExtensionHostDidEnterBackground, object: nil)
     }
     
     deinit {

@@ -81,7 +81,7 @@ class MainViewController: UITabBarController {
         composeBtn.setBackgroundImage(#imageLiteral(resourceName: "tabbar_compose_button"), for: .normal)
         
         // 给按钮添加点击事件
-        composeBtn.addTarget(self, action: #selector(composeBtnClick), for: UIControlEvents.touchUpInside)
+        composeBtn.addTarget(self, action: #selector(composeBtnClick), for: UIControl.Event.touchUpInside)
         // 设置按钮的尺寸
         composeBtn.sizeToFit()
         return composeBtn
@@ -138,7 +138,7 @@ class MainViewController: UITabBarController {
                 tabBar.addSubview(composeBtn)
                 // 设置按钮的位置
                 let rect = self.tabBar.frame
-                let width = rect.width / CGFloat(childViewControllers.count)
+        let width = rect.width / CGFloat(children.count)
                 composeBtn.frame = CGRect(x: 2 * width, y: 0, width: width, height: rect.height)
     }
 }
@@ -192,15 +192,15 @@ extension MainViewController: UITabBarControllerDelegate{
         print("将要切换到\(viewController)")
         
         //1> 获取控制器在数组中的索引  转为nsarray 直接获取数组位置 为int类型
-        let index = (childViewControllers as NSArray).index(of: viewController)
+        let index = (children as NSArray).index(of: viewController)
         //2> 判断当前索引是首页，同时 index 也是首页 ，重复点击首页的按钮   （selectedIndex 获取当前控制器索引）
         if selectedIndex == 0 && index == selectedIndex{
             print("电击了首页")
             
             //3>让表格滚动到顶部
             //a 获取控制器
-            let nav = childViewControllers[0] as! UINavigationController
-            let vc = nav.childViewControllers[0] as! ShouYeViewController
+            let nav = children[0] as! UINavigationController
+            let vc = nav.children[0] as! ShouYeViewController
             //b>滚动到顶部
             vc.tableView?.setContentOffset(CGPoint(x: 0, y: -64), animated: true)
             

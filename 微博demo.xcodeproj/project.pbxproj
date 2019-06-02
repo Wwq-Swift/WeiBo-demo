@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55412ED99210391005841035 /* Pods___demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F4DE82AE9C336F74DAA059E /* Pods___demo.framework */; };
 		C21627781F1115DB00369A9D /* WBCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21627771F1115DB00369A9D /* WBCommon.swift */; };
 		C216277A1F111D4900369A9D /* WBOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21627791F111D4900369A9D /* WBOauthViewController.swift */; };
 		C216277D1F125A7F00369A9D /* WBUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C216277C1F125A7F00369A9D /* WBUserAccount.swift */; };
@@ -32,6 +31,12 @@
 		C21627B01F1DF2D500369A9D /* WBComposeTypeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21627AF1F1DF2D500369A9D /* WBComposeTypeButton.xib */; };
 		C21659931F222B74006A30A3 /* WBComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21659921F222B74006A30A3 /* WBComposeTextView.swift */; };
 		C21659961F243B11006A30A3 /* WBSQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21659951F243B11006A30A3 /* WBSQLiteManager.swift */; };
+		C2305C5B22A3DE6700E75D02 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2305C5A22A3DE6700E75D02 /* ObjectMapper.framework */; };
+		C2305C5D22A3DE9700E75D02 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2305C5C22A3DE9700E75D02 /* SDWebImage.framework */; };
+		C2305C5F22A3DE9C00E75D02 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2305C5E22A3DE9C00E75D02 /* FMDB.framework */; };
+		C2305C6122A3DEA100E75D02 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2305C6022A3DEA100E75D02 /* SVProgressHUD.framework */; };
+		C2305C6322A3DEA600E75D02 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2305C6222A3DEA600E75D02 /* AFNetworking.framework */; };
+		C2305C6522A3DEAA00E75D02 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2305C6422A3DEAA00E75D02 /* pop.framework */; };
 		C2771C151F0F803E006836E7 /* WBStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2771C141F0F803E006836E7 /* WBStatusListViewModel.swift */; };
 		C29DA3201F1F3EEF0002434F /* WBtextComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29DA31F1F1F3EEF0002434F /* WBtextComposeViewController.swift */; };
 		C29DA3221F1F7D4C0002434F /* String+extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29DA3211F1F7D4C0002434F /* String+extention.swift */; };
@@ -85,6 +90,12 @@
 		C21627AF1F1DF2D500369A9D /* WBComposeTypeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBComposeTypeButton.xib; sourceTree = "<group>"; };
 		C21659921F222B74006A30A3 /* WBComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTextView.swift; sourceTree = "<group>"; };
 		C21659951F243B11006A30A3 /* WBSQLiteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBSQLiteManager.swift; sourceTree = "<group>"; };
+		C2305C5A22A3DE6700E75D02 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2305C5C22A3DE9700E75D02 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2305C5E22A3DE9C00E75D02 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2305C6022A3DEA100E75D02 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2305C6222A3DEA600E75D02 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2305C6422A3DEAA00E75D02 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2771C141F0F803E006836E7 /* WBStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListViewModel.swift; sourceTree = "<group>"; };
 		C29DA31F1F1F3EEF0002434F /* WBtextComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBtextComposeViewController.swift; sourceTree = "<group>"; };
 		C29DA3211F1F7D4C0002434F /* String+extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extention.swift"; sourceTree = "<group>"; };
@@ -117,7 +128,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55412ED99210391005841035 /* Pods___demo.framework in Frameworks */,
+				C2305C6522A3DEAA00E75D02 /* pop.framework in Frameworks */,
+				C2305C6322A3DEA600E75D02 /* AFNetworking.framework in Frameworks */,
+				C2305C6122A3DEA100E75D02 /* SVProgressHUD.framework in Frameworks */,
+				C2305C5F22A3DE9C00E75D02 /* FMDB.framework in Frameworks */,
+				C2305C5D22A3DE9700E75D02 /* SDWebImage.framework in Frameworks */,
+				C2305C5B22A3DE6700E75D02 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +143,12 @@
 		AA0614E6AA1808F1E499D911 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C2305C6422A3DEAA00E75D02 /* pop.framework */,
+				C2305C6222A3DEA600E75D02 /* AFNetworking.framework */,
+				C2305C6022A3DEA100E75D02 /* SVProgressHUD.framework */,
+				C2305C5E22A3DE9C00E75D02 /* FMDB.framework */,
+				C2305C5C22A3DE9700E75D02 /* SDWebImage.framework */,
+				C2305C5A22A3DE6700E75D02 /* ObjectMapper.framework */,
 				4F4DE82AE9C336F74DAA059E /* Pods___demo.framework */,
 			);
 			name = Frameworks;
@@ -306,7 +328,6 @@
 				C2BABE1A1EF516D7007941FC /* Frameworks */,
 				C2BABE1B1EF516D7007941FC /* Resources */,
 				17285F0FC00211562805E3BA /* [CP] Embed Pods Frameworks */,
-				BF0204DC818733175AE70523 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -381,28 +402,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-微博demo/Pods-微博demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-微博demo/Pods-微博demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF0204DC818733175AE70523 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-微博demo/Pods-微博demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D65A9E64AD3D2E0AFB271FB5 /* [CP] Check Pods Manifest.lock */ = {
@@ -411,13 +430,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-微博demo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -590,7 +612,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.631288233wwq15859399640.--demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -604,7 +626,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.631288233wwq15859399640.--demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

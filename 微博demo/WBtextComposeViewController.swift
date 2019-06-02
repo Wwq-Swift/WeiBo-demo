@@ -51,7 +51,7 @@ class WBtextComposeViewController: UIViewController {
         setupUI()
         
         //监听键盘通知
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardChanged(n:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardChanged(n:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
         // Do any additional setup after loading the view.
     }
@@ -73,7 +73,7 @@ class WBtextComposeViewController: UIViewController {
     // MARK: - 键盘监听方法
     @objc private func keyboardChanged(n: Notification) {
         //1. 目标 rect
-        guard let rect = (n.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+        guard let rect = (n.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
             return
         }
         

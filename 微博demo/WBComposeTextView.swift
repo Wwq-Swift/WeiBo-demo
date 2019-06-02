@@ -20,7 +20,7 @@ class WBComposeTextView: UITextView {
     private func setupUI() {
         
         //0.注册监听   监听textView中内容的变化
-        NotificationCenter.default.addObserver(self, selector: #selector(textChanged), name: NSNotification.Name.UITextViewTextDidChange, object: self)
+        NotificationCenter.default.addObserver(self, selector: #selector(textChanged), name: UITextView.textDidChangeNotification, object: self)
         
         placeholderLabel.text = "分享新鲜事..."
         placeholderLabel.font = self.font
